@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/axit-landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Axit Landing</title>
+</head>
+<body>
+    <svg style="display:none">
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+			C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+			h192c61.76,0,112,50.24,112,112V352z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+			c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <circle cx="393.6" cy="118.4" r="17.056"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 470.513 470.513">
+            <g>
+                <path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
+		c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
+		c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z"/>
+            </g>
+        </symbol>
+        <symbol id="youtube" viewBox="0 0 461.001 461.001">
+            <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+	c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+	C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+	c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+    </svg>
+
+<!--    Nav-->
+    <div class="nav-bar">
+        <div class="container">
+            <div class="nav-bar__inner">
+                <div class="nav-bar__logo logo">
+                    <img src="./assets/images/logo/logo.png" alt="logo">
+                </div>
+                <div class="burger">
+                    <div class="burger__menu" id="burgerJS" data-dropdown="true">
+                        <span class="burger__bar" data-dropdown="true"></span>
+                        <span class="burger__bar" data-dropdown="true"></span>
+                        <span class="burger__bar" data-dropdown="true"></span>
+                        <span class="burger__bar" data-dropdown="true"></span>
+                    </div>
+                    <div class="burger__content" id="burgerContentJS">
+                        <nav class="nav-bar__nav nav">
+                            <a href="#features" class="nav__item">Features</a>
+                            <a href="#about" class="nav__item">About</a>
+                            <a href="#pricing" class="nav__item">Pricing</a>
+                            <a href="#reviews" class="nav__item">Reviews</a>
+                            <a href="#contact" class="nav__item">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+<!--Header-->
+    <header class="header">
+
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__intro intro">
+                    <img src="assets/images/logo/logo-big.png" alt="logo">
+                    <h1 class="intro__title title_big title_big_nocent title_decor">MODERN AXURE TEMPLATE
+                        FOR BEAUTIFUL PROTOTYPES</h1>
+                    <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.</p>
+                    <a href="#" class="intro__button button button_transp">Download</a>
+                </div>
+                <div class="header__form">
+                    <div class="header__form-container form-in-header">
+                        <div class="form-in-header__header">
+                            <span class="form-in-header__label">Try Your</span>
+                            <span class="form-in-header__label form__label_emph">FREE</span>
+                            <span class="form-in-header__label">Trial Today</span>
+                        </div>
+                        <div class="form-in-header__inputs-container">
+                            <div class="form-in-header__input-block">
+                                <input type="text" class="input" placeholder="Name">
+                            </div>
+                            <div class="form-in-header__input-block">
+                                <input type="email" class="input" placeholder="Email">
+                            </div>
+                            <div class="form-in-header__input-block">
+                                <input type="password" class="input" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-in-header__submit">
+                            <a href="#" class="form-in-header__submit-button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<!--Brand bar-->
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-bar__inner">
+                <div class="brand-bar__text-content">
+                    <h1 class="brand-bar__title title_small">Social Media</h1>
+                    <p class="brand-bar__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean euismod bibendum laoreet.</p>
+                </div>
+                <div class="brand-bar__brands brands">
+                    <svg class="brands__item">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                    <svg class="brands__item">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                    <svg class="brands__item">
+                        <use xlink:href="#youtube"></use>
+                    </svg>
+                    <svg class="brands__item">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--Tabs-->
+    <section class="section section_gray" id="features">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs__togglers togglers">
+                    <div class="togglers__item" onclick="toggle('tabs__block_first')">
+                        Tab 1
+                    </div>
+                    <div class="togglers__item" onclick="toggle('tabs__block_second')">
+                        Tab 2
+                    </div>
+                    <div class="togglers__item" onclick="toggle('tabs__block_third')">
+                        Tab 3
+                    </div>
+                </div>
+                <div class="tabs__container" id="tabs-containerJS">
+                    <div class="tabs__block tabs__block_active" id="tabs__block_first">
+                        <div class="tabs__text-content">
+                            <h1 class="title_small">Tabs with soft transitioning effect.</h1>
+                            <p class="tabs__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
+                            <p class="tabs__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet</p>
+                            <a href="#" class="button button_orange">Download</a>
+                        </div>
+                        <div class="tabs__image">
+                            <img src="./assets/images/tabs/1.png" alt="Tabs Photo">
+                        </div>
+                    </div>
+                    <div class="tabs__block" id="tabs__block_second">
+                        <div class="tabs__text-content">
+                            <h1 class="title_small">Tabs with soft transitioning effect.</h1>
+                            <p class="tabs__paragraph text">Arcu quisque fringilla, justo a turpis scelerisque tincidunt per posuere.
+                                Ligula metus curae; faucibus ridiculus volutpat per aenean odio torquent.
+                                Potenti felis pharetra aptent taciti eu tellus arcu, habitasse vitae.
+                                Iaculis ornare convallis nec bibendum odio etiam eu turpis orci.</p>
+                            <p class="tabs__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet</p>
+                            <a href="#" class="button button_orange">Download</a>
+                        </div>
+                        <div class="tabs__image">
+                            <img src="./assets/images/tabs/1.png" alt="Tabs Photo">
+                        </div>
+                    </div>
+                    <div class="tabs__block" id="tabs__block_third">
+                        <div class="tabs__text-content">
+                            <h1 class="title_small">Tabs with soft transitioning effect.</h1>
+                            <p class="tabs__paragraph text">Augue egestas ullamcorper tincidunt per eu semper mi nostra interdum!
+                                Odio sapien luctus tristique arcu mollis aptent egestas commodo himenaeos?
+                                Penatibus dapibus non ornare nulla purus vel senectus congue curabitur.</p>
+                            <p class="tabs__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet</p>
+                            <a href="#" class="button button_orange">Download</a>
+                        </div>
+                        <div class="tabs__image">
+                            <img src="./assets/images/tabs/1.png" alt="Tabs Photo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!--    Sub list section-->
+    <section class="section">
+        <div class="container">
+            <div class="general-blocks">
+                <div class="general-blocks__image">
+                    <img src="assets/images/general/1.png" alt="General image">
+                </div>
+                <div class="general-blocks__text-content">
+                    <h1 class="title_small title_decor">Sub list section</h1>
+                    <p class="general-blocks__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                        accumsan et viverra justo commodo.</p>
+                    <div class="general-blocks__issue issue">
+                        <div class="issue__image-container">
+                            <img src="assets/images/icons/download.png" alt="Issue image">
+                        </div>
+                       <div class="issue__text">
+                           <h3 class="issue__title">Title</h3>
+                           <p class="issue__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                       </div>
+                    </div>
+                    <div class="general-blocks__issue issue">
+                        <div class="issue__image-container">
+                            <img src="assets/images/icons/download.png" alt="Issue image">
+                        </div>
+                        <div class="issue__text">
+                            <h3 class="issue__title">Title</h3>
+                            <p class="issue__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aenean euismod bibendum laoreet. Proin gravida dolor
+                                sit amet lacus accumsan et viverra justo commodo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--Picture section-->
+    <section class="section section_gray">
+        <div class="container">
+            <div class="general-blocks">
+                <div class="general-blocks__text-content">
+                    <h1 class="general-blocks__title title_small title_decor">Standard Picture Section</h1>
+                    <p class="general-blocks__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                        et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                        natoque penatibus et magnis dis parturient montes.</p>
+                    <p class="general-blocks__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet.</p>
+                </div>
+                <div class="general-blocks__image">
+                    <img src="assets/images/general/2.png" alt="Issue image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!--    Why this is awesome-->
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="why-awesome">
+                <h1 class="section__title title_big title_decor">WHY THIS IS AWESOME</h1>
+                <p class="section__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="why-awesome__advantages advantages">
+                    <div class="advantages__item">
+                        <div class="advantages__image-container">
+                            <img src="./assets/images/icons/lamp.png" alt="Lamp">
+                        </div>
+                        <h2 class="advantages__title title_small">Thoughtful Design</h2>
+                        <p class="advantages__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean euismod bibendum laoreet. Proin gravida
+                            dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__image-container">
+                            <img src="./assets/images/icons/keyboard.png" alt="Lamp">
+                        </div>
+                        <h2 class="advantages__title title_small">Well Crafted</h2>
+                        <p class="advantages__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean euismod bibendum laoreet. Proin gravida
+                            dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__image-container">
+                            <img src="./assets/images/icons/lightning.png" alt="Lamp">
+                        </div>
+                        <h2 class="advantages__title title_small">Easy to Customize</h2>
+                        <p class="advantages__paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean euismod bibendum laoreet. Proin gravida
+                            dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<!--Pricing Options -->
+    <section class="section section_gray" id="pricing">
+        <div class="container">
+            <div class="pricing-options">
+                <h1 class="section__title title_big title_decor">PRICING OPTIONS</h1>
+                <p class="section__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="pricing-options__row prices">
+
+                    <div class="prices__item">
+                        <div class="prices__header">
+                            <h2 class="prices__title">Basic</h2>
+                            <div class="prices__pricelabel pricelabel">
+                                <span class="pricelabel__dollar">$</span>
+                                <span class="pricelabel__number">0</span>
+                            </div>
+                            <span class="prices__frequency">Free for Life</span>
+                            <span class="prices__popularity"></span>
+                        </div>
+                        <div class="prices__abilities abilities">
+                            <span class="abilities__label text">1 gb of space</span>
+                            <span class="abilities__label text">10 gb of bandwidth</span>
+                            <span class="abilities__label text">3 websites</span>
+                            <span class="abilities__label text">Basic Customization</span>
+                            <span class="abilities__label text">wordpress integration</span>
+                            <span class="abilities__label text">email support</span>
+                        </div>
+                    </div>
+
+
+                    <div class="prices__item">
+                        <div class="prices__header">
+                            <h2 class="prices__title">Proffesional</h2>
+                            <div class="prices__pricelabel pricelabel">
+                                <span class="pricelabel__dollar">$</span>
+                                <span class="pricelabel__number">19</span>
+                            </div>
+                            <span class="prices__frequency">Monthly Payment</span>
+                            <span class="prices__popularity prices__popularity__withtext">OUR MOST POPULAR</span>
+                        </div>
+                        <div class="prices__abilities abilities">
+                            <span class="abilities__label text">5 gb of space</span>
+                            <span class="abilities__label text">50 gb of bandwidth</span>
+                            <span class="abilities__label text">12 websites</span>
+                            <span class="abilities__label text">Advanced Customization</span>
+                            <span class="abilities__label text">wordpress integration</span>
+                            <span class="abilities__label text">email support</span>
+                        </div>
+                    </div>
+
+
+                    <div class="prices__item">
+                        <div class="prices__header">
+                            <h2 class="prices__title">Enterprise</h2>
+                            <div class="prices__pricelabel pricelabel">
+                                <span class="pricelabel__dollar">$</span>
+                                <span class="pricelabel__number">70</span>
+                            </div>
+                            <span class="prices__frequency">Monthly Payment</span>
+                            <span class="prices__popularity"></span>
+                        </div>
+                        <div class="prices__abilities abilities">
+                            <span class="abilities__label text">Unlimited space</span>
+                            <span class="abilities__label text">unlimited bandwidth</span>
+                            <span class="abilities__label text">100 websites</span>
+                            <span class="abilities__label text">Advanced Customization</span>
+                            <span class="abilities__label text">wordpress integration</span>
+                            <span class="abilities__label text">24/7 customer support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!--    Our customers -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <div class="what-customers-said">
+                <h1 class="section__title title_big title_decor">WHAT OUR CUSTOMERS ARE SAYING</h1>
+                <p class="section__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="what-customers-said__row reviews">
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.<p>
+                        </div>
+                        <div class="reviews__personcard personcard">
+                            <div class="personcard__image-container">
+                                <img src="assets/images/customers/1.png" alt="Customer">
+                            </div>
+                            <div class="personcard__labels">
+                                <span class="personcard__namelabel">Jeremy H.</span>
+                                <span class="personcard__joblabel text">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Doloribus
+                                accusamus expedita repellat similique
+                                odio aspernatur ex, architecto eaque
+                                quo suscipit.<p>
+                        </div>
+                        <div class="reviews__personcard personcard">
+                            <div class="personcard__image-container">
+                                <img src="assets/images/customers/1.png" alt="Customer">
+                            </div>
+                            <div class="personcard__labels">
+                                <span class="personcard__namelabel">John S.</span>
+                                <span class="personcard__joblabel text">Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            <p class="text">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Doloribus
+                                accusamus expedita repellat similique
+                                odio aspernatur ex, architecto eaque
+                                quo suscipit.<p>
+                        </div>
+                        <div class="reviews__personcard personcard">
+                            <div class="personcard__image-container">
+                                <img src="assets/images/customers/1.png" alt="Customer">
+                            </div>
+                            <div class="personcard__labels">
+                                <span class="personcard__namelabel">Susan W.</span>
+                                <span class="personcard__joblabel text">Photographer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!--    Design -->
+    <section class="section section__mdpadd section_whtdecor design">
+        <div class="container">
+            <div class="design__inner">
+                <h1 class="section__title title_big title_decor">STYLISH AXURE DESIGN</h1>
+                <p class="section__text section__text_ral">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                <a href="#" class="design__button button button_transp">Download</a>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--    Contact us-->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-us">
+                <h1 class="section__title title_big title_decor">CONTACT US</h1>
+                <p class="section__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <div class="contact-us__form form-in-footer">
+                    <div class="form-in-footer__input-block">
+                        <input class="input" placeholder="Name" type="text"/>
+                    </div>
+                    <div class="form-in-footer__input-block">
+                        <input class="input" placeholder="Email" type="email"/>
+                    </div>
+                    <div class="form-in-footer__input-block">
+                        <input class="input" placeholder="Subject" type="text"/>
+                    </div>
+                    <textarea class="form-in-footer__input-block input" placeholder="Message"></textarea>
+                    <div class="form-in-footer__input-block">
+                        <a href="#" class="button button_orange">Send Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!--    Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brands brands brands_cent">
+                    <svg class="brands__item brands__item_tiny">
+                        <use xlink:href="#instagram"></use>
+                    </svg>
+                    <svg class="brands__item brands__item_tiny">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                    <svg class="brands__item brands__item_tiny">
+                        <use xlink:href="#youtube"></use>
+                    </svg>
+                    <svg class="brands__item brands__item_tiny">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </div>
+                <div class="footer__label">
+                    <span>© 2015 Axure Themes</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="./assets/javascript/tabs.js"></script>
+    <script src="./assets/javascript/burger.js"></script>
+    <script src="./assets/javascript/anchor.js"></script>
+
+</body>
+</html>
