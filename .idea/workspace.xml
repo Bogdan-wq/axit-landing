@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3545d65-2b33-4303-a2eb-7a1d2d1f22f7" name="Default Changelist" comment="" />
+    <list default="true" id="d3545d65-2b33-4303-a2eb-7a1d2d1f22f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aUOgzL9AI7lckDmHjzUd6Khzwd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,8 +31,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../piroll-layout/assets/scss/nav.scss" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="SvnConfiguration">
@@ -52,7 +56,7 @@
       <workItem from="1586974644952" duration="4861000" />
       <workItem from="1586982733504" duration="658000" />
       <workItem from="1587014710075" duration="24000" />
-      <workItem from="1587015360885" duration="8090000" />
+      <workItem from="1587015360885" duration="8625000" />
     </task>
     <servers />
   </component>
@@ -60,10 +64,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1587020934537">
+    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1587024718603">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587020934537" />
+    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1587024718603" />
     <state x="303" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1586969756873">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
